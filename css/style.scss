@@ -32,6 +32,10 @@ body {
   background-color: var(--black);
 }
 
+/**
+ * nav
+ */
+
 .nav-container {
   padding-top: 30px;
   display: flex;
@@ -331,6 +335,7 @@ body {
 }
 /* product-main start */
 .product-main {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
@@ -340,6 +345,9 @@ body {
 }
 .product-main .product-card {
   display: grid;
+  &.hidden {
+    display: none;
+  }
 }
 
 .product-main .product-card img {
