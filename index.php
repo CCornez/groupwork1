@@ -2,6 +2,7 @@
 require './data/categories.php';
 require './data/products.php';
 require './data/filters.php';
+
 $manifest = file_get_contents("./dist/manifest.json");
 $manifestObject = json_decode($manifest, true);
 ?>
@@ -24,6 +25,7 @@ $manifestObject = json_decode($manifest, true);
     <div class="logo">
       <span style="position: fixed"> LOGO </span>
     </div>
+    <a href="./admin/index.html">Admin Page</a>
     <div class="navbar">
       <ul>
         <?php
@@ -97,6 +99,7 @@ $manifestObject = json_decode($manifest, true);
           </div>
           <!-- color options -->
         </div>
+
         <!-- <div class="filter-section">
           <h4>Price</h4>
           <div class="filter-option">
@@ -108,6 +111,7 @@ $manifestObject = json_decode($manifest, true);
             <label for="price-high">high</label><br /><br />
           </div>
         </div> -->
+
         <!-- price options -->
 
         <div class="filter-section">
