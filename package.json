@@ -1,0 +1,25 @@
+{
+  "name": "groupwork1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "predeploy": "npm run build",
+    "deploy": "surge ./dist groupwork1.surge.sh",
+    "clean": "rm -rf ./dist ./node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCornez/groupwork1.git"
+  },
+  "keywords": [],
+  "author": "Birhan Yörükoğlu, Cyril Cornez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CCornez/groupwork1/issues"
+  },
+  "homepage": "https://github.com/CCornez/groupwork1#readme"
+}
